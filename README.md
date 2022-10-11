@@ -61,12 +61,13 @@ void getFileNames(string path, vector<string>& files)
 
 ```
 2、传输改成socket协议，支持大文件上传，效率很快，需要启动个Server socket
+![](https://cdn.nlark.com/yuque/0/2022/png/262397/1665465880719-3ec78718-3e6e-4ac8-87a1-d2751bfdaabf.png)
 
 3、参考https://github.com/Ormicron/Sharp-dumpkey 
 
 远程拉取基址，考虑到免杀性改成了C++代码，
+![](https://cdn.nlark.com/yuque/0/2022/png/262397/1665469015290-f07178fb-95a6-4d35-9161-bbf2d4a7da13.png)
 
-![](https://cdn.nlark.com/yuque/0/2022/png/262397/1665465880719-3ec78718-3e6e-4ac8-87a1-d2751bfdaabf.png)
 
 
 ### v1.1
