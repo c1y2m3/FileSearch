@@ -2,9 +2,13 @@
 
 ## 更新
 ### v1.3
+
 1、排除c盘符的查找指定类型文件，避免大量缓存文件，加了个参数在c:\\users目录下查找
+
 2、运行成功后删除掉生成出来的文件夹以及压缩包，以免文件较大被察觉，文件后缀修改成了mp4
+
 3、(碰到vx用户自设的保存路径，需要加个指定路径去dump)
+
 ![](https://images.zsxq.com/Fr7-9bEGX922u_WCD00vgKzoQkvE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1672502399&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:g2IPF0-87rABGDbCjicVM8bm79g=)
 
 ```
