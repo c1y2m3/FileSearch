@@ -11,7 +11,7 @@
 
 4、优化了查找文件匹配方式，支持模糊匹配或精确匹配
 
-![](https://images.zsxq.com/Fr7-9bEGX922u_WCD00vgKzoQkvE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1672502399&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:g2IPF0-87rABGDbCjicVM8bm79g=)
+![](https://cdn.nlark.com/yuque/0/2022/png/32539762/1668442052652-b9de6f05-6a00-4ae1-a32c-a5d9adbf7631.png)
 
 ```
 [+] FileUpload.exe dumpkey
