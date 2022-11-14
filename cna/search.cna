@@ -1,4 +1,0 @@
-alias search {
-	$args = substr($0, 6);
-	bdllspawn($1, script_resource("reflective_dll.dll"),$args, "test dll", 5000, false);
-}
