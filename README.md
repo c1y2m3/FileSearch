@@ -26,7 +26,7 @@ Server.exe port # 默认8888端口
 可自行修改需要上传的文件类型（747行），默认为：
 
 ```plain
-	const char* filetype[] = { ".doc",".xls", ".pdf" ,".docx",".xlsx",".txt",".bat",".ppt",".pptx" };
+const char* filetype[] = { ".doc",".xls", ".pdf" ,".docx",".xlsx",".txt",".bat",".ppt",".pptx" };
 ```
 
 2、运行成功后会自动删除生成出来的文件夹以及压缩包，压缩包文件随机修改成了mp4后缀
