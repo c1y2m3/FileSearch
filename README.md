@@ -19,7 +19,7 @@ Server.exe port # 默认8888端口
 [+] FileSearch.exe user 127.0.0.1 8888 # c:\users目录下查找类型文件
 ```
 
-### v1.3
+### 更新说明
 
 1、all参数排除了c盘符查找指定类型文件，避免大量缓存文件造成卡顿，添加user参数在c:\users目录下查找
 
