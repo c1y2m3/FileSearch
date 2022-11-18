@@ -1,6 +1,6 @@
 ### Server
 
-<<<<<<< HEAD
+
 ```plain
 Server.exe port # 默认8888端口
 ```
