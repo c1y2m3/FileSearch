@@ -49,7 +49,7 @@ const char* filetype[] = { ".doc",".xls", ".pdf" ,".docx",".xlsx",".txt",".bat",
 
 测试在1M带宽的服务器上传输大文件（G级）可能会损坏，感觉这跟双方网络波动有一定关系，后续会改成自动分卷压缩来上传，目前暂用的解决办法：
 
-例如本地自带Rar进行切割，回传后
+利用本地Rar进行切割再进行上传
 
 ```plain
 C:\Program Files\WinRAR\Rar.exe a -ep1 -m0 -v2mC:\Users\admin\Downloads\1.rar C:\Users\admin\Downloads\xxx.jar
