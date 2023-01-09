@@ -47,15 +47,15 @@ const char* filetype[] = { ".doc",".xls", ".pdf" ,".docx",".xlsx",".txt",".bat",
 
 ## 已知问题：
 
-测试在1M带宽的服务器上传输大文件（G级）可能会损坏，感觉这跟双方网络波动有一定关系，后续会改成自动分卷压缩来上传，目前暂用的解决办法：
+大文件（G级）传输回来后压缩包损坏无法正常打开，经过多次测试发现是c++ zip库压缩的问题，
 
-利用本地Rar进行切割再进行上传
+暂时使用以下两种办法解决：
+
+1、上传Rar.exe压缩后再使用upload_file方法进行回传
 
 ```plain
-C:\Program Files\WinRAR\Rar.exe a -ep1 -m0 -v2mC:\Users\admin\Downloads\1.rar C:\Users\admin\Downloads\xxx.jar
+rar.exe a -k -r -s -m1 bak.rar "path"
 ```
-
-注释：-v2m 即分卷的大小为2m 
 
 2、使用WinRAR内置修复功能或者使用[DiskInternals ZIP](https://www.diskinternals.com/zip-repair/)进行修复损坏文件
 
